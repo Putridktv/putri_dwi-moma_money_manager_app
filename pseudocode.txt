@@ -1,0 +1,32 @@
+START PROGRAM Moma_moneyManager
+
+READ AND WRITE "pendapatan" with number
+READ AND WRITE "pengeluaran" with number
+READ AND WRITE "balance" with number
+
+STORE "pendapatan" AS NUMBER WITH ANY VALUE
+STORE "pengeluaran" AS NUMBER WITH ANY VALUE
+STORE "balance" AS NUMBER WITH 0
+
+IF "input" is "pendapatan" 
+    STORE "balance" WITH "balance" PLUS "pendapatan"
+ELSE
+    STORE "balance" WITH "balance" MINUS "pengeluaran"
+END IF
+
+PRINT "balance"
+
+IF "input data" is TRUE 
+    AND IF "input" is "pendapatan" 
+        STORE "balance" WITH "balance" PLUS "pendapatan"
+    ELSE
+        STORE "balance" WITH "balance" MINUS "pengeluaran"
+    END IF
+
+    PRINT "balance"
+
+ELSE
+    END PROGRAM Moma_moneyManager
+    
+END IF 
+
