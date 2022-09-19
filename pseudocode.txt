@@ -16,6 +16,7 @@ END IF
 
 PRINT "balance"
 
+LOOP
 IF "input data" is TRUE 
     AND IF "input" is "pendapatan" 
         STORE "balance" WITH "balance" PLUS "pendapatan"
@@ -26,6 +27,7 @@ IF "input data" is TRUE
     PRINT "balance"
 
 ELSE
+    END LOOP
     END PROGRAM Moma_moneyManager
     
 END IF 
